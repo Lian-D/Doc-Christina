@@ -1,8 +1,5 @@
-package function;
+package data;
 
-import data.Employee;
-import data.Patient;
-import data.Room;
 
 public class Alert {
     public String urgency;
