@@ -3,7 +3,9 @@ import function.Filereader;
 import function.StringParse;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 
 
 public class Test {
@@ -16,8 +18,8 @@ public class Test {
             System.out.println(text);
             StringParse parser = new StringParse();
             parser.transcribedData = text;
-            System.out.println(new FileUpdateCheck().isFileUpdated(new File("speechdata.txt")));
-            parser.parseData();
+            File file = new File("speechdata.txt");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
