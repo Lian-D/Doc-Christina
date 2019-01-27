@@ -20,6 +20,8 @@ public class Patientdata implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+        //The Following is for the demo, please ignore this
         PriorityList priorityList = new PriorityList();
         ArrayList<String> priority = new ArrayList<>();
         ArrayList<String> norm = new ArrayList<>();
@@ -30,25 +32,26 @@ public class Patientdata implements Initializable {
         priority.add("Urgent Room 105 needs a AED");
         priorityList.priorityAlerts = priority;
         priorityList.alerts = norm;
+        //I will make this stuff update soon
         ArrayList<String> priorities = priorityList.getAlerts();
         for (String s: priorities){
             listView.getItems().add(s);
         }
-
+        File file = new File("speechdata.txt");
+        FileUpdateCheck fuc = new FileUpdateCheck();
+        fuc.fileUpdate(file);
+        //This is how we test for if our files have updated
         int delay = 5000; //milliseconds
         ActionListener taskPerformer = new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 System.out.println("Checking For Updates");
-                File file = new File("speechdata.txt");
-                FileUpdateCheck fuc = new FileUpdateCheck();
-                fuc.fileUpdate(file);
                 boolean value = fuc.isFileUpdated(file);
                 System.out.println(value);
-                value = fuc.isFileUpdated(file);
-                System.out.println(value);
-                fuc.timeStamp = 550000;
-                value = fuc.isFileUpdated(file);
-                System.out.println(value);
+//                value = fuc.isFileUpdated(file);
+//                System.out.println(value);
+//                fuc.timeStamp = 550000;
+//                value = fuc.isFileUpdated(file);
+//                System.out.println(value);
             }
         };
         new javax.swing.Timer(delay, taskPerformer).start();
