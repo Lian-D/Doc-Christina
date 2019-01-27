@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ActionController">
+  <tabs>
+    <Tab text="Account Data">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <JFXListView fx:id="List" layoutX="36.0" layoutY="46.0" prefHeight="311.0" prefWidth="182.0" />
+                  <JFXTextField fx:id="displayHost" layoutX="300.0" layoutY="126.0" prefHeight="25.0" prefWidth="201.0" text="Example Host" />
+                  <JFXTextField fx:id="displayUser" layoutX="300.0" layoutY="173.0" prefHeight="25.0" prefWidth="201.0" text="Example Username" />
+                  <JFXTextField fx:id="displayPass" layoutX="300.0" layoutY="222.0" prefHeight="25.0" prefWidth="201.0" text="Example Password" />
+                  <Label layoutX="282.0" layoutY="61.0" text="Account Information">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="84.0" layoutY="14.0" text="Stored Accounts" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Add Account">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="111.0" layoutY="85.0" text="Account Host">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="144.0" layoutY="142.0" text="Username">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="147.0" layoutY="200.0" text="Password">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXPasswordField fx:id="addPass" layoutX="264.0" layoutY="204.0" promptText="Password" />
+                  <JFXPasswordField fx:id="addUser" layoutX="264.0" layoutY="146.0" promptText="Username" />
+                  <JFXTextField fx:id="addHost" layoutX="264.0" layoutY="89.0" promptText="Name of website" />
+                  <JFXButton layoutX="294.0" layoutY="252.0" onAction="#addAccount" prefHeight="35.0" prefWidth="75.0" text="Store" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
