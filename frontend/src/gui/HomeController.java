@@ -24,6 +24,7 @@ public class HomeController implements Initializable{
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Patientdata.fxml"));
         Parent root1 = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
+        stage.setResizable(false);
         stage.setTitle("PatientData");
         stage.setScene(new Scene(root1));
         stage.show();

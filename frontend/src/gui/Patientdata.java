@@ -41,7 +41,7 @@ public class Patientdata implements Initializable {
         FileUpdateCheck fuc = new FileUpdateCheck();
         fuc.fileUpdate(file);
         //This is how we test for if our files have updated
-        int delay = 5000; //milliseconds
+        int delay = 2500; //milliseconds
         ActionListener taskPerformer = new ActionListener() {
             public void actionPerformed(ActionEvent evt) {
                 System.out.println("Checking For Updates");

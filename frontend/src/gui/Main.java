@@ -26,6 +26,7 @@ public class Main extends Application {
         primaryStage.setTitle("Christina: Hospital Alert");
         primaryStage.setScene(new Scene(root, 600, 400));
         primaryStage.show();
+        primaryStage.setResizable(false);
     }
 
 
