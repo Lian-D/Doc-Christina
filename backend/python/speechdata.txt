@@ -1,0 +1,23 @@
+{
+  "results": [
+    {
+      "alternatives": [
+        {
+          "confidence": 0.818, 
+          "transcript": "urgent Dr room three Fred is gay "
+        }
+      ], 
+      "final": true
+    }, 
+    {
+      "alternatives": [
+        {
+          "confidence": 0.406, 
+          "transcript": "you look like "
+        }
+      ], 
+      "final": true
+    }
+  ], 
+  "result_index": 0
+}
