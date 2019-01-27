@@ -1,2 +1,2 @@
 # nwHacks2019-Project
-Fred Sux
+A functional system with a python backend and java front end built to assist hospital workers 
