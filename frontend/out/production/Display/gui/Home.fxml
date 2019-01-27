@@ -10,7 +10,7 @@
    <children>
       <Pane prefHeight="422.0" prefWidth="600.0">
          <children>
-            <Label layoutX="229.0" layoutY="112.0" prefHeight="108.0" prefWidth="149.0" text="doc" textAlignment="JUSTIFY">
+            <Label layoutX="95.0" layoutY="103.0" prefHeight="108.0" prefWidth="410.0" text="Christina" textAlignment="JUSTIFY">
                <font>
                   <Font name="Times New Roman Bold" size="96.0" />
                </font>
@@ -20,11 +20,11 @@
                   <Font name="Times New Roman" size="27.0" />
                </font>
             </Label>
-            <JFXButton fx:id="intialize" buttonType="RAISED" layoutX="184.0" layoutY="263.0" onAction="#intialize" prefHeight="52.0" prefWidth="90.0" text="Initialize">
+            <JFXButton fx:id="intialize" buttonType="RAISED" layoutX="194.0" layoutY="252.0" onAction="#intialize" prefHeight="52.0" prefWidth="90.0" text="Initialize">
                <font>
                   <Font name="Times New Roman" size="12.0" />
                </font></JFXButton>
-            <JFXButton fx:id="documentation" buttonType="RAISED" layoutX="326.0" layoutY="263.0" onAction="#documentation" prefHeight="52.0" prefWidth="90.0" text="Documentation">
+            <JFXButton fx:id="documentation" buttonType="RAISED" layoutX="320.0" layoutY="252.0" onAction="#documentation" prefHeight="52.0" prefWidth="90.0" text="Documentation">
                <font>
                   <Font name="Times New Roman" size="12.0" />
                </font></JFXButton>
