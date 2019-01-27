@@ -1,1 +1,0 @@
-{'results': [{'alternatives': [{'confidence': 0.962, 'transcript': 'Urgency critical, we need 4 nurses at room 404'}], 'final': True}], 'result_index': 0}

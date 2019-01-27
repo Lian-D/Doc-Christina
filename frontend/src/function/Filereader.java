@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Filereader {
 
-    private String readFile(String pathname) throws IOException {
+    public String readFile(String pathname) throws IOException {
 
         File file = new File(pathname);
         StringBuilder fileContents = new StringBuilder((int)file.length());
