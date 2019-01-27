@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Patient {
     public String name;
-    public Room room;
+    public String room;
     public ArrayList<String> concerns;
 
     public String getName() {
@@ -13,14 +13,6 @@ public class Patient {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Room getRoom() {
-        return room;
-    }
-
-    public void setRoom(Room room) {
-        this.room = room;
     }
 
     public ArrayList<String> getConcerns() {
